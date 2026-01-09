@@ -1,38 +1,68 @@
-# .
+# FocusBoard 🧠📋
 
-This template should help get you started developing with Vue 3 in Vite.
+FocusBoard é uma aplicação **SPA** para organização de tarefas por categoria, desenvolvida com **Vue 3**, **Pinia** e **Vue Router**, focada em boas práticas de arquitetura, UX e testabilidade.
 
-## Recommended IDE Setup
+👉 Projeto criado com fins educacionais, simulando um app frontend moderno de produção.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## 🚀 Demo
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+🔗 **Aplicação em produção:**  
+https://focusboard-nine.vercel.app/
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## ✨ Funcionalidades
 
-## Project Setup
+- 📂 Organização de tarefas por categoria
+- ➕ Adição e remoção de tarefas
+- ✅ Marcar tarefas como concluídas
+- 💾 Persistência de dados com `localStorage`
+- 🧭 Navegação SPA com Vue Router
+- 🎨 Layout responsivo e UX refinada
+- 🎞️ Animações suaves em listas
+- 🧪 Testes automatizados (store e componentes)
 
-```sh
-npm install
-```
+---
 
-### Compile and Hot-Reload for Development
+## 🛠️ Tecnologias utilizadas
 
-```sh
-npm run dev
-```
+- **Vue 3** (Composition API + `<script setup>`)
+- **Vite** (build e dev server)
+- **Pinia** (gerenciamento de estado)
+- **Vue Router** (rotas SPA)
+- **Vitest** + **@vue/test-utils** (testes)
+- **CSS puro** (sem frameworks)
 
-### Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+## 🧠 Conceitos aplicados
+
+- Arquitetura SPA
+- Comunicação entre componentes via eventos (`emit`)
+- Gerenciamento de estado global
+- Persistência de estado no frontend
+- Isolamento de testes
+- Animações com `TransitionGroup`
+- Deploy com rewrite para SPA
+
+---
+
+## 📂 Estrutura do projeto
+
+```txt
+src/
+ ├─ assets/
+ ├─ components/
+ │   └─ TaskItem.vue
+ ├─ views/
+ │   ├─ HomeView.vue
+ │   ├─ CategoryView.vue
+ │   └─ AboutView.vue
+ ├─ stores/
+ │   └─ task.store.js
+ ├─ router/
+ │   └─ index.js
+ ├─ App.vue
+ └─ main.js
